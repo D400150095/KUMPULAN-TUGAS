@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+	//input masukan data
+void AkarKuadrat (int a, int b, int c)
+
+{	
+
+	//proses dalam rumus
+	float x1,x2;
+	
+	int D;
+	
+	D=(b*b)-(4*a*c);
+	
+	//jika masukan data D
+	if  (D==0)
+		x1=-1*(b/(2*a));
+	
+	else
+	//jika masukan data D
+	if(D>0)
+	
+	
+	//Proses data masuk rumus matematika
+	{
+		x1=( -b + (sqrt(D))) / (2*a);
+		x2=( -b - (sqrt(D))) / (2*a);
+	}
+
+	{
+	//Data keluaran/hasil dari perumusan
+	printf ("D = %d\n",D);
+	printf ("x1 = %.2f\n",x1);
+	printf ("x2 = %.2f",x2);
+	}
+	
+}
+
+int main()
+
+
+{	//Tampilan dalam program yang akan dicari
+	int a, b, c;
+	
+		printf( "Masukkan nilai a BRO : \n" ); scanf ("%d",& a);
+		printf( "PINTERRR Masukkan nilai b sekarang mas: \n" ); scanf ("%d",& b);
+		printf( "SIIPP,terakhir Masukkan nilai c mas: \n" ); scanf ("%d",& c);
+	
+	AkarKuadrat(a,b,c);
+	
+ return 0;
+}
